@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Test on your basic photography knowledge.">
+		<title>Quiz on Photography</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Photography Basic Quiz</h1>
+		</header>
+		<main role="main">
+			<nav class="hidden" id="navbar">
+				<ul>
+					<li>You are here:<span class="question-counter" id="counter"> 0</span> / <span class="questionNumber">0</span>
+			        </li>
+			        <li>Score:<span class="score" id="score"> 0</span> / <span class="questionNumber">0</span>
+			        </li>
+				</ul>
+			</nav>
+			<section class="start-text">
+				<h2 id="startText">Are you ready?</h2>	
+            </section>
+            <div class="form-wrapper">
+			 <form role="form" class="hidden" id="quiz">
+                 <section class="question-content">
+                     <h3><span id="questionContent">Question Content</span></h3>
+                 </section>
+                 <fieldset name="inputs" class="input-content">
+                     <div class="input-container">
+                         <span id="option0" class="option"><label for="radio0">
+                         <input data-answer-index="0" type="radio" id="radio0" name="radio" value="0" checked><span id="choice0">A.</span>
+                         </label></span> 
+                         <span id="option1" class="option"><label for="radio1">
+                         <input data-answer-index="1" type="radio" id="radio1" name="radio" value="1"><span id="choice1">B.</span >
+                         </label></span>
+                         <span id="option2" class="option"><label for="radio2">
+                         <input data-answer-index="2" type="radio" id="radio2" name="radio" value="2"><span id="choice2">C.</span>
+                         </label></span>  
+                         <span id="option3" class="option"><label for="radio3">
+                         <input data-answer-index="3" type="radio" id="radio3" name="radio" value="3"><span id="choice3">D.</span>
+                         </label></span>  
+                     </div>
+                     <div id="js-answer-feedback"></div>
+                </fieldset>  
+             </form>
+            </div>
+            <section class="final-page" id="finalScore"></section>
+            <div class="buttons">
+                <button id="js-button-start" type="button">Go!</button>
+                <button class="hidden" id="js-button-submit" type="submit">SUBMIT</button>
+            </div>
+		</main>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	    <script type="text/javascript" src="index.js"></script>	
+	</body>
+</html>
+

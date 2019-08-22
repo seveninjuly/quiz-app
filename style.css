@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family= Nanum+Brush+Script|Special+Elite&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  color: #2A2A2A;
+  font-family: 'Special Elite', cursive;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#startText, .final-page{
+  text-align: center;
+  color: #2A2A2A;
+  font-family: 'Special Elite', cursive;
+  font-size: 45px;
+  font-weight: normal;
+  margin-top: 100px;
+}
+
+nav {
+  color: #2A2A2A;
+  font-family: 'Special Elite', cursive;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 2em;
+  padding: 0 1em;
+}
+
+#score, #counter {
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin-top: 40px;
+  color: #2A2A2A;
+  font-family: 'Special Elite', cursive;
+}
+
+fieldset {
+  border: none;
+}
+
+.question-content {
+  text-align: center;
+}
+
+#questionContent {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  font-size: 18px;
+  margin-top: 0.7em;
+  margin-right: 10px;
+} 
+
+label, input:hover {
+  cursor: pointer;
+}
+
+#js-answer-feedback {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+button {
+  width: 11%;
+  height: 40px;
+  color: #2A2A2A;
+  background-color: #f8e8e8;
+  font-size: 18px;
+  font-family: 'Special Elite', cursive;
+  line-height: 1;
+  padding: 5px 5px 5px 5px;
+  border: double #2A2A2A;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff3f3;
+  color: #2A2A2A;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #startText, .final-page{
+    font-weight: normal;
+    margin-top: 70px;
+  }
+
+  form {
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .buttons {
+    margin-top: 110px;
+  }
+
+  button {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  #startText, .final-page {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+  nav {
+    font-size: 13px;
+  }
+  
+  #score, #counter {
+    margin-left: 5px;
+  }
+  
+  form {
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  #questionContent {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  .input-container {
+    font-size: 15px;
+  } 
+
+  input {
+    margin-top: 0.3em;
+    margin-right: 5px;
+  }
+  
+  #js-answer-feedback {
+    font-size: 17px;
+  }
+  
+  .buttons {
+   margin-top: 70px;
+  }
+  
+  button {
+    width: auto;
+    font-size: 14px;
+  }
+}
